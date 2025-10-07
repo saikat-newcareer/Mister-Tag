@@ -35,7 +35,11 @@ nav li a {
     text-decoration: none; 
 }
 
-.banner{
-    max-width:fit-content;
-    
+#banner {
+  background-image: url('../images//homecover.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+
 }
