@@ -15,17 +15,17 @@
 .logo{
     width: 200px;
 }
+
 nav{
     display: flex;
     font-weight: 500;
     font-size: 20px;
     align-items: center;
     justify-content: space-evenly;
-    margin: 50px;
+    margin: 30px;
 }
 nav ul {
     display: flex;
-    
 }
 nav ul li {
     list-style: none;
@@ -41,5 +41,27 @@ nav li a {
   background-position: center;
   background-size: cover;
   height: 300px;
-
+  text-align: center;
+  font-size: 55px;
+  color: antiquewhite;
+  margin-top: -75px;
 }
+
+.textmove{
+    position: relative;
+    
+    font-size: 2em;
+            font-weight: bold;
+            animation: slideIn 2s ease-out forwards;
+            opacity: 0;
+}
+
+@keyframes slideIn {
+            0% {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
