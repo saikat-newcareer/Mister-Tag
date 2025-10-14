@@ -15,37 +15,79 @@
   font-optical-sizing: auto;
   font-style: normal;
 }
-.contact-container{
-    
+html, body {
+    margin: 0; /* Remove default margins */
+    height: 100%; /* Ensure html and body take full height */
+    width: 100%; /* Ensure html and body take full width */
+    padding: 0;
+
+body{
+    background-image: linear-gradient(to left, orange, blue );
     
 }
         .contact{
-            
+            padding: 30px 50px 0px 50px;
             margin-left: 50px;
         }
         .contactcolor{
             text-decoration: underline;
-            color: orange;
+            color: black;
             width: 280px;
+        }
+        .clr{
+            color: white;
+        }
+        .name {
+  font-weight: bold;
+  margin-bottom: 2px; /* Reduce this value */
+}
+
+.title {
+  margin-top: 0;
+}
+.email{
+    margin-top: -10px;
+}
+        .contact-map{
+           /* margin-left: 100px; */
+           /* justify-content: center; */
+           display: flex;
+            justify-content: center;
+            align-items: center;
+           text-decoration: underline;
+           
+        }
+        #map{
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     </style>
 </head>
 <body class="outfit-normal">
    <section class="contact-container">
      <div class="contact">
-        <h1 class="contactcolor">Let's talk business.</h1>
-        <p><b>Cell:</b> +880 1917-484835</p>
-        <p><b>E-mail:</b> faruk@mistertag.net</p>
+        <h1 class="contactcolor">Let's talk business</h1>
+        <div class="clr">
+            <div class="contact-card">
+  <p class="name">M. Faruk Hossain</p>
+  <p class="title">Proprietor</p>
+</div>
+            <div>
+                <p><b>Cell:</b> +880 1917-484835</p>
+        <p class="email"><b>E-mail:</b> faruk@mistertag.net</p>
+            </div>
+        </div>
     </div>
-    <h1 class="contact">Find us on google map</h1>
-    <div class="contact">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d228.1909169865805!2d90.42281632425691!3d23.781067410369293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1760164458343!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <h1 class="contact-map">Find us on google map</h1>
+    <div id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d228.1909169865805!2d90.42281632425691!3d23.781067410369293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1760164458343!5m2!1sen!2sbd" width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
    </section>
 
 
     <div>
-        
+        <form action=""></form>
     </div>
 </body>
 </html>
